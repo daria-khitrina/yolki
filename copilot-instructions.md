@@ -140,11 +140,11 @@ This document outlines the best practices for creating HTML emails, ensuring com
 
 ---
 
-## 16. Inline Font-Family Styles
-- **Why**: Some email clients, like Gmail, may ignore global styles. Inlining the `font-family` ensures consistent rendering across all clients.
-- **How**: Apply the `font-family` inline to all text elements.
+## 16. Use 'Arial' Font Inline
+- **Why**: To avoid using external CSS files, which may cause emails to be flagged as spam, and to ensure consistent rendering across email clients.
+- **How**: Apply the `font-family: 'Arial', sans-serif;` inline to all text elements.
   ```html
-  <h1 style="font-family: 'Tilda Sans VF', sans-serif;">Header Text</h1>
-  <p style="font-family: 'Tilda Sans VF', sans-serif;">Paragraph Text</p>
-  <a href="#" style="font-family: 'Tilda Sans VF', sans-serif;">Link Text</a>
+  <h1 style="font-family: 'Arial', sans-serif;">Header Text</h1>
+  <p style="font-family: 'Arial', sans-serif;">Paragraph Text</p>
+  <a href="#" style="font-family: 'Arial', sans-serif;">Link Text</a>
   ```
